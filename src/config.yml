@@ -1,0 +1,63 @@
+#Prefixy by JoshiCodes_ aka. JoshiZockt_
+#Niemand hat das Recht dieses Plugin als sein geistiges Eigentum auszugeben!
+#Natürlich darfst du den Source verändern, jedoch musst du erwähnen das die Grundlage von mir kommt!
+#Ich Bitte dies zu beachten!
+#Vielen Dank!
+
+#Übersetzung der Booleans
+Booleans:
+   true: '&aJa'
+   false: '&cNein'
+
+Prefix: '&e&lPrefixy &8x &7'
+
+#Permissions zum nutzen von /prefixy
+Permissions: 'prefixy.use'
+
+#Nachricht welche gesendet wird wenn man keine Rechte hat
+#Platzhalter:
+#%prefix%   -   Prefix
+NoPerms: '%prefix% &cDas darfst du nicht!'
+
+#Fehler wenn ein Argument das falsche argument ist
+IllegalArgument: '%prefix% &cBitte gebe ein/e &f&l%type% &can!'
+
+#Nachricht nachdem ein Prefix deaktiviert wurde
+SuccessfulDeactivatedPrefix: '%prefix% &aDu hast den Prefix %name% mit der ID %id% deaktiviert!'
+
+Spieler is not Online: '%prefix% &cDieser Spieler ist nicht Online!'
+
+Help:
+   1: '%prefix% &8[&4&lSOON&8] /rangs help - Bekomme eine Hilfe über die Prefixe'
+   2: '%prefix% &c/prefixy set <player> <id> - Setze einem Spieler einen Prefix'
+   3: '%prefix% &c/prefixy add <ColorCode> <bold> - Füge einen Prefix hinzu'
+   4: '%prefix% &c/prefixy remove <id> - Entferne einen Prefix'
+   5: '%prefix% &c/prefixy list - Sehe alle Prefixe'
+   
+#Nachricht bei /prefixy list
+#Platzhalter
+#%id%   -   ID
+#%name%   -   Name
+#%bold%   -   Ob der Prefix Dick(&l) geschrieben ist [BOOLEAN WIRD AUTOMATISCH ÜBERSETZT]
+#%activated%   -   Ob der Prefix aktiviert(In der prefixs.yml 'Activated') ist [BOOLEAN WIRD AUTOMATISCH ÜBERSETZT]
+List: '&7ID: &a%id% &c/ &7Name: &a%name% &c/ &7Dick: %bold% &c/ &7In Nutzung: %activated%'
+
+defaultPrefix:
+#Diese Farbe wird nur nach löschen von 'prefixs.yml' übernommen! Zum Abändern der normalen Farbe bitte ich dies in 'prefixs.yml' zu machen!
+#Vielen Dank!
+   Color: 7
+   
+#Das Format welches im Chat übernommen Wird!
+#Platzhalter:
+#%player%   -   Spieler welcher in den Chat Schreibt!
+#%message%   -   Die Chat Nachricht
+#%rang%   -   Rang welcher mit /prefixy setrang vergeben wird
+#%displayname%   -   Displayname falls ein Prefix aus einem Anderem Plugin so arbeitet und übernommen werden soll!
+Format: '%player% §7>> %message%'
+
+#Format für die Tabliste
+#Platzhalter:
+#%player%   -   Spieler
+#%displayname%   -   Displayname falls ein Prefix aus einem Anderem Plugin so arbeitet und übernommen werden soll!
+#%rank%   -   RAng welcher mit /prefixy setrang vergeben wird (SOON)
+Tablist Format: 'Spieler &8x &7%player%'
